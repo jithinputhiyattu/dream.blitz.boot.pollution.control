@@ -17,6 +17,7 @@ public class SecurityFilter implements Filter{
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 		System.out.println("hello i am inside the filter...");
+		chain.doFilter(request, response);
 		
 	}
 
