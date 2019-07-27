@@ -22,6 +22,7 @@ public class VehicleService {
 	}
 
 	Vehicle getVehicleByMobile(String mobile) {
+
 		return vehicleRepository.findByMobile(mobile).get();
 	}
 
